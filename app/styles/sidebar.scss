@@ -1,0 +1,40 @@
+.sidebar {
+
+  overflow-y: auto;
+
+  #{$a-tags} {
+    color: $almostWhite;
+  }
+
+  #{$a-tags-hover} {
+    color: $emberOrange;
+  }
+
+  .main-logo {
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-shadow: 0 0 5px #fff, 0 0 20px $emberOrange, 0 0 30px $emberOrange,
+                   0 0 40px $emberOrange, 0 0 50px $emberOrange, 0 0 75px $emberOrange;
+    }
+  }
+
+  .profile-picture {
+    margin: 20px auto;
+    border: 7px solid $darkWhite;
+  }
+
+  .separator {
+    border-top: 1px solid rgba($darkWhite, 0.3);
+  }
+
+  .description {
+    color: $almostWhite;
+  }
+
+  .social-media-buttons {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+}
