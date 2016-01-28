@@ -19,3 +19,6 @@ testem.log
 #Intellij Idea
 /.idea
 *.iml
+
+# OS files
+*.DS_Store
