@@ -7,6 +7,15 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
+  this.route('contact');
+  this.route('blog', function() {
+    this.route('show', {
+      path: ':post_id'
+    });
+  });
+  this.route('admin', function() {});
+  this.route('tag');
+  this.route('not-found', { path: '/*path' });
 });
 
 export default Router;

@@ -1,0 +1,33 @@
+{{#each model as |post|}}
+    <div class="card ss-post">
+        <div class="card-block">
+            <h3 class="card-title">
+              {{#link-to "blog.show" post class="font-weight-bold"}}
+                {{post.title}}
+              {{/link-to}}
+            </h3>
+            <p class="card-text">{{post.text}}</p>
+          {{#link-to "blog.show" post class="card-link"}}
+              Contiune Reading
+          {{/link-to}}
+        </div>
+        <div class="card-footer text-muted ss-post-footer">
+            Feb 01 2016 on Podcast, Intervew
+        </div>
+    </div>
+    <hr/>
+{{/each}}
+
+<div class="text-left">
+    <ul class="nav nav-inline">
+        <li class="nav-item">
+            Page 1 of 11
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Older</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Newer</a>
+        </li>
+    </ul>
+</div>

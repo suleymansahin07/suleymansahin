@@ -1,3 +1,7 @@
 @import "fonts";
+@import "customVariables";
 
 $font-family-base: 'Palanquin', sans-serif;
+$link-color: $lightBlue;
+$link-hover-color: $emberOrange;
+$link-hover-decoration: none;
