@@ -1,18 +1,14 @@
-<div class="container-fluid">
-    <div class="row">
-      <div class="hidden-sm-down col-md-3 col-lg-2 bg-inverse sidebar">
-        {{partial 'sidebar'}}
-      </div>
-      <div class="col-md-9 col-lg-10 col-md-offset-3 col-lg-offset-2 content">
-        {{outlet}}
-      </div>
-        <div style="background: red;">
-          {{outlet 'admin'}}
-        </div>
+<div class="main">
+    <div class="sidebar">
+      {{partial 'sidebar'}}
     </div>
-    <div class="row">
-      <div class="col-md9 col-lg-10 col-md-offset-3 col-lg-offset-2 footer">
-        {{partial 'footer'}}
-      </div>
+    <div class="sidebar-sm">
+      {{partial 'sidebar-sm'}}
+    </div>
+    <div class="content">
+      {{outlet}}
+    </div>
+    <div class="footer">
+      {{partial 'footer'}}
     </div>
 </div>

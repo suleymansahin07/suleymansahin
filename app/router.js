@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('show', {
       path: ':post_id'
     });
+    this.route('pagination');
   });
   this.route('admin', function() {});
   this.route('tag');

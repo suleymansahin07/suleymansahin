@@ -11,12 +11,9 @@
   }
 
   .main-logo {
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 
     &:hover {
-      color: $almostWhite;
-      text-shadow: 0 0 1px #fff, 0 0 5px $emberOrange, 0 0 10px $emberOrange,
-                   0 0 15px $emberOrange, 0 0 20px $emberOrange, 0 0 30px $emberOrange;
     }
   }
 
@@ -38,19 +35,13 @@
     text-align: center;
   }
 
-  .note-wrap {
-    position: fixed;
-    bottom: 0;
-    margin-left: -25px;
-    width: 100%;
+  .note {
     background: $darkBlue;
     border-top: 1px solid rgba($darkWhite, 0.3);
-
-    .note {
-      font-size: small;
-      padding: 5px;
-    }
-
+    text-align: center;
+    padding: 20px;
+    font-size: small;
+    color: $almostWhite;
   }
 
 }

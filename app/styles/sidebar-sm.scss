@@ -1,0 +1,28 @@
+@import "custom-variables";
+
+.sidebar-sm {
+
+  overflow-y: auto;
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  #{$a-tags} {
+    color: $almostWhite;
+  }
+
+  #{$a-tags-hover} {
+    color: $emberOrange;
+  }
+
+  .separator {
+    border-top: 1px solid rgba($darkWhite, 0.3);
+  }
+
+  .social-media-buttons {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+}

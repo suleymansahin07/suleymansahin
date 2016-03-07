@@ -1,38 +1,24 @@
 <div class="container">
     <div class="row">
-        <div class="text-xs-center">
-            <a href="/" class="h3 font-weight-bold main-logo">
-              {{globals.appName}}
-              {{fa-icon "asterisk" spin=true}}
-            </a>
-        </div>
-    </div>
-    <div class="row">
-      {{gravatar-image email=globals.gravatarEmail class="img-circle img-fluid center-block profile-picture"}}
-    </div>
-    <div class="row">
-        <hr class="separator"/>
-    </div>
-    <div class="row">
         <ul class="nav text-xs-center">
             <li class="nav-item">
               {{#link-to "index" class="nav-link"}}
-                  <h2>Home</h2>
+                {{fa-icon "home" size=2}}
               {{/link-to}}
             </li>
             <li class="nav-item">
               {{#link-to "about" class="nav-link"}}
-                  <h2>About</h2>
+                {{fa-icon "user" size=2}}
               {{/link-to}}
             </li>
             <li class="nav-item">
               {{#link-to "contact" class="nav-link"}}
-                  <h2>Contact</h2>
+                {{fa-icon "envelope" size=2}}
               {{/link-to}}
             </li>
             <li class="nav-item">
               {{#link-to "blog" class="nav-link"}}
-                  <h2>Blog</h2>
+                {{fa-icon "rss" size=2}}
               {{/link-to}}
             </li>
         </ul>
@@ -41,43 +27,29 @@
         <hr class="separator"/>
     </div>
     <div class="row">
-        <div class="text-xs-center description">
-            This site is my tutorials, rantings and musings on software development.
-        </div>
-    </div>
-    <div class="row">
         <div class="container social-media-buttons">
-            <ul class="nav nav-inline">
+            <ul class="nav text-xs-center">
                 <li class="nav-item">
                     <a class="nav-link" href="{{globals.socialGithub}}" target="_blank">
-                      {{fa-icon "github" size=1}}
+                      {{fa-icon "github" size=2}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{globals.socialLinkedin}}" target="_blank">
-                      {{fa-icon "linkedin" size=1}}
+                      {{fa-icon "linkedin" size=2}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{globals.socialTwitter}}" target="_blank">
-                      {{fa-icon "twitter" size=1}}
+                      {{fa-icon "twitter" size=2}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{globals.socialSoundcloud}}" target="_blank">
-                      {{fa-icon "soundcloud" size=1}}
+                      {{fa-icon "soundcloud" size=2}}
                     </a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="text-xs-center note">
-            Created with
-            <a target="_blank" href="http://emberjs.com/">
-                Ember.js
-            </a>
-            by Suleyman Sahin.
         </div>
     </div>
 </div>

@@ -2,11 +2,12 @@
 @import "bower_components/font-awesome/scss/font-awesome";
 
 // Bootstrap Imports
-@import "bootstrapOverrides";
+@import "bootstrap-overrides";
 @import "bootstrap";
 
 // Custom Imports
 @import "layout";
 @import "sidebar";
+@import "sidebar-sm";
 @import "blog";
 

@@ -1,5 +1,5 @@
 // Custom Styles
-@import "customVariables";
+@import "custom-variables";
 
 html, body, .ember-view {
   height: 100%;
@@ -13,21 +13,72 @@ body {
   }
 }
 
+.main {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  z-index: 3;
   background: $darkBlue;
-  padding: 50px 10px;
-  position: fixed;
-  height: 100%;
+  padding: 20px;
+}
+
+.sidebar-sm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 3;
+  background: $darkBlue;
+  padding: 25px 5px;
 }
 
 .content {
-  background: $lightGray;
-  padding: 20px;
-  min-height: 100%;
+  position: relative;
   height: 100%;
+  overflow: scroll;
+  z-index: 2;
+  background: url("/assets/images/pattern_bkg.png") repeat;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .footer {
+}
+
+@include media-breakpoint-down(md) {
+  .sidebar {
+    display: none;
+  }
+  .sidebar-sm {
+    display: block;
+  }
+  .content {
+    margin-left: 80px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .sidebar {
+    display: block;
+  }
+  .sidebar-sm {
+    display: none;
+  }
+  .content {
+    margin-left: 240px;
+  }
 }
 
 
