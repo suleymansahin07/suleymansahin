@@ -1,0 +1,25 @@
+<div class="text-left">
+    <ul class="nav nav-inline">
+        <li class="nav-item">
+            Page {{currentPage}} of {{totalPages}}
+        </li>
+      {{#if canStepBackward}}
+          <li class="nav-item">
+              <a class="nav-link" {{action "incrementPage" -1}} href="#">Older</a>
+          </li>
+      {{else}}
+          <li class="nav-item disabled">
+              <a class="nav-link disabled" {{action "incrementPage" -1}} href="#">Older</a>
+          </li>
+      {{/if}}
+      {{#if canStepForward}}
+          <li class="nav-item">
+              <a class="nav-link" {{action "incrementPage" 1}} href="#">Newer</a>
+          </li>
+      {{else}}
+          <li class="nav-item disabled">
+              <a class="nav-link disabled" {{action "incrementPage" 1}} href="#">Newer</a>
+          </li>
+      {{/if}}
+    </ul>
+</div>
